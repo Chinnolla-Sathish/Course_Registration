@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Pricing Table</title>
+    <style>
+      body {
+        font-family:'Sono', sans-serif;
+        background-color:powderblue;
+        margin:0;
+      }
+      .main_container{
+        border:5px solid gold;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        gap:2rem;
+        padding:20px;
+      }
+      @media(max-width:500px)
+      {
+        .main_container{
+          flex-direction:column;
+          height:130vh;
+          padding:10px;
+        }
+      }
+
+      .pricing_plan{
+        flex:1;
+        max-width:400px;
+        padding:20px;
+        background-color:orange;
+        border-radius:20px;
+        text-align:center;
+        box-shadow:0 0 10px rgba(0, 0, 0, 5);
+        transition: transform 0.3s ease-in-out;
+      }
+      .pricing_plan:hover{
+          transform: scale(1.05);
+      }
+      .plan_title{
+        font-size:24px;
+        font-weight:bold;
+        margin-bottom:10px;
+        color:#333;
+
+      }
+      .plan_price{
+        font-size:48px;
+        font-weight:bold;
+        margin-bottom:10px;
+        color:#333;
+      }
+      .plan_features{
+          list-style:none; //it will remove bullet points
+          padding:0;
+          margin:0;
+          margin-bottom:20px;
+      }
+
+      .plan_features p{
+        color:#555;
+      }
+      .plan_button{
+        border: none;
+        border-radius:20px;
+        background-color:red;
+        color:white;
+        font-size:16;
+        font-weight:bold;
+        padding:10px 20px;
+        cursor:pointer;
+        transition: background-color 0.3 ease-in-out;
+      }
+
+      .plan_button:hover{
+        background-color:green;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class ="pricing_plan">
+        <div class="plan_title">Basic</div>
+        <div class="plan_price">$10/month</div>
+        <ul class="plan_features">
+          <li><p>10GB Storage</p></li>
+          <li><p>1 User</p></li>
+          <li><p>No support</p></li>
+        </ul>
+      <button class="plan_button">sign up</button>
+      </div>
+
+      <div class ="pricing_plan">
+        <div class="plan_title">Standard</div>
+        <div class="plan_price">$10/month</div>
+        <ul class="plan_features">
+          <li><p>30GB Storage</p></li>
+          <li><p>2 User</p></li>
+          <li><p>phone and email support</p></li>
+        </ul>
+        <button class="plan_button">sign up</button>
+      </div>
+
+      <div class ="pricing_plan">
+        <div class="plan_title">Premium</div>
+        <div class="plan_price">$40/month</div>
+        <ul class="plan_features">
+          <li><p>60GB Storage</p></li>
+          <li><p>5 User</p></li>
+          <li><p>24/7 support</p></li>
+        </ul>
+      <button class="plan_button">sign up</button>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+<!--/*It will effectively work when dispaly :flex*//*is a useful property to create responsive layouts where
+flex items automatically adjust their positioning when the container's width changes.*/-->
