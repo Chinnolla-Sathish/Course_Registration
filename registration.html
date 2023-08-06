@@ -1,0 +1,164 @@
+<html>
+<head>
+  <title>User Registration</title>
+  <style>
+    body{
+      margin:0;
+    }
+    .main_container{
+      border: 5px solid black;
+      background-color:#f5f5f5;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100%;
+      padding:20px;
+
+    }
+    .r_box{
+      flex:1;
+      max-width:400px;
+      padding:20px;
+      background-color:#DA70D6;
+      border-radius:10px;
+      text-align:left;
+      box-shadow:0 0 10px rgba(0, 0, 0, 5);
+      transition: transform 0.3s ease-in-out;
+
+  }
+  .r_box:hover{
+    transform : scale(1.05);
+  }
+  .reg{
+
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#555;
+  }
+  .button{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    text-align:center;
+
+  }
+  .submit{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    background-color: #70DA7C ;
+
+  }
+  .last div{
+    display:inline-block;
+  }
+  .sign_in{
+    border:none;
+  }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="main_container">
+    <div class="r_box">
+      <div class="reg">Registration</div>
+      <form class="form">
+        <table>
+        <tr>
+          <td><label for="name">Name:</label>  </td>
+          <td>
+            <input type="text" id="name" name="name"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="db">Birth Date:</label>
+          </td>
+          <td>
+              <select>
+                <option value="day">day</option>
+                <option value="1">1</option>
+                <option value="so_on">so on.. </option>
+              </select>
+              <select>
+                <option value="month">Month</option>
+                <option value="january">January</option>
+                <option value="so_on">so on.. </option>
+              </select>
+              <select>
+                <option value="year">Year</option>
+                <option value="2000">2000</option>
+                <option value="so_on">till 2023</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Email">Email:</label>
+          </td>
+          <td>
+              <input type="email" id="Email" name="Email"/>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="Gender">Gender:</label>
+          </td>
+          <td>
+            <select id="gender" name="gender">
+              <option value="select">Please select</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Others</option>
+            </select>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="mo_number">Mobile Number:</label>
+          </td>
+          <td>
+              <input type="number" id="mo_number" name="Email"/>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="courses">Courses:</label>
+          </td>
+          <td>
+            <select id="courses" name="course">
+                <option value="s">Please Select</option>
+              <option value="a">A</option>
+                <option value="b">B</option>
+                  <option value="c">C</option>
+                    <option value="d">D</option>
+                      <option value="z">Others</option>
+
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+      <div class="button">
+        <a href="../pricing_project/submit.html"><button class="submit">Submit</button></a></div>
+      <div class="last">
+        <div>
+        <p>Already have a account?</p>
+      </div>
+      <div class="sign_in">
+      <a href="../pricing_project/sign_in.html"><button class="sign_in">Sign in</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
