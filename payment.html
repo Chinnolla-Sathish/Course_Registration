@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>Payment</title>
+  <style>
+    .container{
+
+        display:flex;
+      justify-content:center;
+      height:100%;
+      align-items:center;
+      font-size:20px;
+      font-weight:bold;
+      background-color:#E6E6FA;
+
+
+    }
+    .pd{
+      padding:10px;
+      background-color:#F08080;
+      width:100%;
+      max-width:400px;
+      height:50vh;
+      border-radius:10px;
+      box-shadow: 0 0 10px 5px;
+      transition: transform 0.3s ease-in-out;
+
+    }
+    .pd:hover{
+      transform: scale(1.05);
+    }
+    .head{
+      padding:5px;
+      display:flex;
+      justify-content:space-between;
+      height:50px;
+      background-color:#FFDAB9;
+      align-items:center;
+      height:20px;
+
+    }
+    .left_h{
+      flex:1;
+      float:left;
+    }
+    .right_h{
+
+      float:right;
+    }
+    .c_number{
+      margin-top: 20px;
+
+    }
+    table{
+
+      border-spacing: 10px 20px;
+      width:100%;
+
+    }
+    .button{
+      margin-top:30px;
+      text-align:center;
+
+    }
+    .pay{
+      width:100%;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .pay:hover{
+      background-color:#66FF66;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pd">
+      <div class="head">
+        <h5 class="left_h">Payment Details</h5>
+        <h5 class="right_h"><input type="checkbox" />Remember</h5>
+      </div>
+      <table>
+        <form>
+          <div class="c_number">
+          <tr> <td><label for="card">CARD NUMBER:</label></td></tr>
+          <tr><td>  <input type="number" id="card" name="card" /></td></tr>
+          </div>
+          <div class="expiry">
+          <tr> <td><label for="ex">EXPIRY DATE:</label></td><td><label for="cv">CV CODE:</label></td></tr>
+          <tr>
+            <td>
+              <select>
+                <option value="month">MM</option>
+              </select>
+              <select>
+                <option value="year">YY</option>
+              </select>
+            </td>
+            <td>
+              <input type="number" id="ex" name="card" />
+            </td>
+          </tr>
+          </div>
+          <tr> <td><label for="amount">Enter Amount(Rupee):</label></td></tr>
+          <tr><td>  <input type="number" id="amount" name="amount" /></td></tr>
+
+        </form>
+      </table>
+      <div class="button"><a href="../pricing_project/sucess.html"><button class="pay">Pay</button></a></div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
