@@ -3,19 +3,78 @@
   <title>Sign in</title>
   <style>
     .container{
-      border:5px solid yellow;
+      /*border:5px solid black*/
         display:flex;
       justify-content:center;
       height:100%;
       align-items:center;
       font-size:48px;
       font-weight:bold;
-      background-color:#FFD700;
-      
+      background-color: #FFF8DC;
+
     }
+
+    .sign_in{
+      padding:100px;
+      background-color: #E6E6FA ;
+      justify-content:center;
+      border-radius:20px;
+      height:30
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 0 10px 3px;
+    }
+    .sign_in:hover{
+      transform:scale(1.05);
+    }
+    .sin{
+      text-align:center;
+      cursor:pointer;
+
+
+    }
+
+    .in{
+      border:none;
+      padding:10px;
+      border-radius:5px;
+      background-color:#FFC107;
+      margin-top:50px;
+      transition: background-color 0.3 ease-in-out;
+    }
+    .in:hover{
+      background-color:#28A745;
+    }
+}
+
   </style>
 </head>
 <body>
-  <div class="container">Work in Progess.... </div>
+  <div class="container">
+    <div class="sign_in">
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label for="Email">Email:</label>
+            </td>
+            <td>
+              <input type="email" id="Eamil" name="Email" />
+            </td>
+            <tr>
+              <td>
+                <label for="password">Password:</label>
+              </td>
+              <td>
+                <input type="password" id="password" name="password" />
+              </td>
+          </tr>
+        </table>
+      </form>
+      <div class="sin">
+        <a href="../pricing_project/learning.html"><button class="in">Sign in</button></a>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
